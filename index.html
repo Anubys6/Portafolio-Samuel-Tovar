@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samuel Tovar Mujica | Ingeniero en Electrónica y Automatización | Portafolio</title>
+  <meta name="description" content="Portafolio oficial de Samuel Tovar Mujica — Ingeniero en Electrónica y Automatización (FIME-UANL). Especialista en desarrollo mecatrónico integral, sistemas embebidos, CAD 3D, IoT y gemelos digitales.">
+  <meta name="author" content="Samuel Tovar Mujica">
+  <meta name="theme-color" content="#07090e">
+
+  <!-- Tipografías de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Hojas de Estilo -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==============================================================================
+       HEADER / NAVBAR FIJO
+       ============================================================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#inicio" class="nav-brand">
+        <span class="nav-brand-badge font-mono">ST</span>
+        <span class="nav-brand-name">Samuel Tovar</span>
+        <span class="nav-brand-role font-mono">// Mecatrónica & IoT</span>
+      </a>
+
+      <!-- Enlaces de Escritorio -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+          <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+          <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+          <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+          <li><a href="#trayectoria" class="nav-link">Trayectoria</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botón Descargar CV en Navbar -->
+      <div class="nav-actions">
+        <a href="assets/docs/Samuel_Tovar_Mujica_CV_Ingenieria_2026.pdf" download="Samuel_Tovar_Mujica_CV_2026.pdf" class="btn-cv-nav" title="Descargar CV en formato PDF">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          <span>Descargar CV</span>
+        </a>
+
+        <!-- Botón Menú Móvil -->
+        <button type="button" class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú de navegación">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menú Desplegable Móvil -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#inicio" class="mobile-link active">🏠 Inicio</a>
+    <a href="#sobre-mi" class="mobile-link">👨‍💻 Sobre Mí</a>
+    <a href="#habilidades" class="mobile-link">⚡ Habilidades Técnicas</a>
+    <a href="#proyectos" class="mobile-link">🚀 Proyectos de Ingeniería</a>
+    <a href="#trayectoria" class="mobile-link">🎓 Formación & Trayectoria</a>
+    <a href="#contacto" class="mobile-link">📬 Contacto Directo</a>
+    <a href="assets/docs/Samuel_Tovar_Mujica_CV_Ingenieria_2026.pdf" download="Samuel_Tovar_Mujica_CV_2026.pdf" class="btn-primary" style="margin-top: 10px; justify-content: center;">
+      📄 Descargar CV en PDF
+    </a>
+  </div>
+
+  <main>
+    <!-- ==============================================================================
+         SECCIÓN 1: HERO (PRESENTACIÓN DE ALTO IMPACTO)
+         ============================================================================== -->
+    <section id="inicio" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Columna Texto y Pitch -->
+          <div class="hero-text-content">
+            <div class="hero-status-badge">
+              <span class="status-dot"></span>
+              <span>Disponible para nuevos retos de ingeniería & desarrollo</span>
+            </div>
+
+            <h1 class="hero-title">
+              Hola, soy <br>
+              <span class="gradient-text">Samuel Tovar Mujica</span>
+            </h1>
+
+            <div class="hero-role font-mono">
+              <span>Ing. en Electrónica y Automatización</span>
+              <span class="hero-role-sub">// FIME - UANL</span>
+            </div>
+
+            <p class="hero-bio">
+              Especialista en <strong>ciclo completo de producto</strong>: desde el modelado CAD paramétrico en Autodesk Fusion 360 y diseño de PCB de potencia en EasyEDA, hasta firmware en C/C++ sobre ESP32, gemelos digitales IoT en tiempo real y aplicaciones web con pasarelas de pago digitales.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#proyectos" class="btn-primary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                <span>Ver Proyectos</span>
+              </a>
+
+              <a href="assets/docs/Samuel_Tovar_Mujica_CV_Ingenieria_2026.pdf" download="Samuel_Tovar_Mujica_CV_2026.pdf" class="btn-download-cv" title="Descargar CV Oficial">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                <span>Descargar CV (PDF)</span>
+              </a>
+
+              <a href="#contacto" class="btn-secondary">
+                <span>Contactar</span>
+              </a>
+            </div>
+
+            <!-- Redes y Contacto Rápido -->
+            <div class="hero-social-links">
+              <a href="mailto:mujica360@gmail.com" class="social-icon-btn" title="Enviar correo a mujica360@gmail.com">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+              <a href="https://wa.me/527821302582" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="WhatsApp: +52 (782) 130-2582">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Columna Avatar con Halo Neón y Badge -->
+          <div class="hero-avatar-wrapper">
+            <div class="avatar-outer-ring">
+              <div class="avatar-inner-container">
+                <img src="assets/images/samuel_avatar.png" alt="Foto de perfil de Samuel Tovar Mujica" class="avatar-img">
+              </div>
+            </div>
+            <div class="avatar-floating-badge">
+              <span class="badge-flag">📍</span>
+              <div>
+                <span class="badge-text-primary">Monterrey, N.L.</span>
+                <span class="badge-text-secondary font-mono">FIME — UANL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Barra de Estadísticas de Ingeniería -->
+        <div class="hero-stats-bar">
+          <div class="stat-item">
+            <span class="stat-number font-mono">36</span>
+            <span class="stat-label">Motores en Matriz MOSFET multiplexada</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number font-mono">&lt;15ms</span>
+            <span class="stat-label">Latencia en Despacho Win32 & Voice OS</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number font-mono">100%</span>
+            <span class="stat-label">Ciclo Completo: CAD, PCB, Firmware y Web</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number font-mono">2026</span>
+            <span class="stat-label">Graduación Ing. Electrónica y Automatización</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         SECCIÓN 2: SOBRE MÍ (VALOR DIFERENCIAL Y ENFOQUE)
+         ============================================================================== -->
+    <section id="sobre-mi">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag font-mono">// Perfil Profesional</span>
+          <h2 class="section-title">Ingeniería Integral de Punta a Punta</h2>
+          <p class="section-description">
+            No me limito al software ni me quedo solo en el hardware: integro ambas disciplinas para construir soluciones físicas y digitales que funcionan en el mundo real.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Tarjeta Principal con extracto del CV -->
+          <div class="about-card-main">
+            <p>
+              Soy estudiante de último año de <strong>Ingeniería en Electrónica y Automatización en FIME - UANL</strong>, con un enfoque riguroso en mecatrónica integral, control de maquinaria y gemelos digitales.
+            </p>
+            <p>
+              Cuento con experiencia práctica comprobada resolviendo el <strong>ciclo completo de producto</strong>: desde concebir la estructura y cinemática en <strong>Autodesk Fusion 360</strong> y diseñar la electrónica de potencia en <strong>EasyEDA</strong> (matrices MOSFET y conmutación de cargas inductivas), hasta programar el firmware embebido en <strong>C/C++ (ESP32/PlatformIO)</strong> y conectar todo con <strong>servicios web IoT y pasarelas de pago modernas</strong> como Google Pay API.
+            </p>
+            <p>
+              Mi meta es desarrollar tecnología escalable, confiable y de alta velocidad orientada a la optimización de procesos, automatización industrial y manufactura avanzada.
+            </p>
+          </div>
+
+          <!-- Pilares de Valor (Pillars) -->
+          <div class="about-pillars-grid">
+            <div class="pillar-card">
+              <div class="pillar-icon">📐</div>
+              <h3 class="pillar-title">CAD 3D & Fabricación</h3>
+              <p class="pillar-desc">Modelado paramétrico en Fusion 360, ensambles cinemáticos, tolerancias e impresión 3D FDM funcional (Bambu Studio / MakerWorld).</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">⚡</div>
+              <h3 class="pillar-title">Electrónica & Potencia</h3>
+              <p class="pillar-desc">Diseño esquemático y ruteo de PCBs en EasyEDA, etapas de conmutación MOSFET, protección inductiva y control de motores/compresores.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">💻</div>
+              <h3 class="pillar-title">Firmware & Embebidos</h3>
+              <p class="pillar-desc">Programación en C/C++ sobre microcontroladores ESP32 y Arduino, control de periféricos en tiempo real y co-simulación Wokwi.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">🌐</div>
+              <h3 class="pillar-title">Ecosistema Web & Cloud</h3>
+              <p class="pillar-desc">Interfaces responsivas con JavaScript moderno, Node.js, WebSockets, integración de pagos digitales y gemelos digitales sincronizados.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         SECCIÓN 3: COMPETENCIAS TÉCNICAS ESPECIALIZADAS (DEL CV)
+         ============================================================================== -->
+    <section id="habilidades">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag font-mono">// Stack Tecnológico</span>
+          <h2 class="section-title">Competencias Técnicas Especializadas</h2>
+          <p class="section-description">
+            Herramientas y tecnologías dominadas durante el desarrollo de proyectos mecatrónicos y sistemas de ingeniería.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- 1. CAD, Diseño Mecánico & 3D -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">📐</div>
+              <div>
+                <h3 class="skill-cat-title">CAD, Diseño Mecánico & 3D</h3>
+              </div>
+            </div>
+            <p class="skill-cat-desc">Modelado paramétrico, simulación cinemática de ensambles y fabricación aditiva.</p>
+            <div class="skill-tags-list">
+              <span class="skill-tag">Autodesk Fusion 360</span>
+              <span class="skill-tag">API Python Fusion</span>
+              <span class="skill-tag">AutoCAD (2D/DXF)</span>
+              <span class="skill-tag">Bambu Studio</span>
+              <span class="skill-tag">MakerWorld</span>
+              <span class="skill-tag">Impresión 3D FDM</span>
+              <span class="skill-tag">Archivos STL / 3MF</span>
+            </div>
+          </div>
+
+          <!-- 2. Electrónica & Potencia -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">⚡</div>
+              <div>
+                <h3 class="skill-cat-title">Electrónica & Potencia</h3>
+              </div>
+            </div>
+            <p class="skill-cat-desc">Diseño de circuitos impresos, etapas de potencia y análisis de cargas electromecánicas.</p>
+            <div class="skill-tags-list">
+              <span class="skill-tag">EasyEDA (PCB Layout)</span>
+              <span class="skill-tag">Matrices MOSFET 6x6</span>
+              <span class="skill-tag">Drivers de Actuadores</span>
+              <span class="skill-tag">Cargas Inductivas & Relés</span>
+              <span class="skill-tag">Proteus VSM</span>
+              <span class="skill-tag">LTspice</span>
+              <span class="skill-tag">PLECS 4.9</span>
+              <span class="skill-tag">FluidSIM Neumática</span>
+            </div>
+          </div>
+
+          <!-- 3. Embebidos, Control & IoT -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">🤖</div>
+              <div>
+                <h3 class="skill-cat-title">Embebidos, Control & IoT</h3>
+              </div>
+            </div>
+            <p class="skill-cat-desc">Firmware en tiempo real, microcontroladores, controladores lógicos y robótica.</p>
+            <div class="skill-tags-list">
+              <span class="skill-tag">C / C++</span>
+              <span class="skill-tag">ESP32 (WROOM/S3)</span>
+              <span class="skill-tag">Arduino Framework</span>
+              <span class="skill-tag">PlatformIO</span>
+              <span class="skill-tag">Co-simulación Wokwi</span>
+              <span class="skill-tag">PLC (Lenguaje Ladder)</span>
+              <span class="skill-tag">Control Digital</span>
+              <span class="skill-tag">Automatización Industrial</span>
+            </div>
+          </div>
+
+          <!-- 4. Desarrollo Web & Software -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">💻</div>
+              <div>
+                <h3 class="skill-cat-title">Desarrollo Web & Software</h3>
+              </div>
+            </div>
+            <p class="skill-cat-desc">Aplicaciones web modernas, backends ligeros, APIs transaccionales y launchers nativos.</p>
+            <div class="skill-tags-list">
+              <span class="skill-tag">JavaScript (ES6+)</span>
+              <span class="skill-tag">Python 3.11</span>
+              <span class="skill-tag">Node.js & Express</span>
+              <span class="skill-tag">HTML5 & CSS3</span>
+              <span class="skill-tag">TailwindCSS</span>
+              <span class="skill-tag">Vite</span>
+              <span class="skill-tag">Google Pay API</span>
+              <span class="skill-tag">Win32 API & C#</span>
+              <span class="skill-tag">Git & GitHub</span>
+            </div>
+          </div>
+
+          <!-- 5. Prácticas de Ingeniería -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">🛠️</div>
+              <div>
+                <h3 class="skill-cat-title">Prácticas de Ingeniería</h3>
+              </div>
+            </div>
+            <p class="skill-cat-desc">Metodología de taller, validación en banco de pruebas y gestión de componentes industriales.</p>
+            <div class="skill-tags-list">
+              <span class="skill-tag">Diagnóstico a Nivel Componente</span>
+              <span class="skill-tag">Diagramas Unifilares</span>
+              <span class="skill-tag">Esquemáticos Eléctricos</span>
+              <span class="skill-tag">Listas BOM (JLCPCB)</span>
+              <span class="skill-tag">Control de Calidad</span>
+              <span class="skill-tag">Mantenimiento Electromecánico</span>
+            </div>
+          </div>
+
+          <!-- 6. Inteligencia Artificial & Automatización OS -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">🧠</div>
+              <div>
+                <h3 class="skill-cat-title">IA & Automatización OS</h3>
+              </div>
+            </div>
+            <p class="skill-cat-desc">Procesamiento de voz en tiempo real, agentes autónomos y automatización de sistemas operativos.</p>
+            <div class="skill-tags-list">
+              <span class="skill-tag">Gemini AI API</span>
+              <span class="skill-tag">Web Speech API</span>
+              <span class="skill-tag">Web Audio API (VAD)</span>
+              <span class="skill-tag">Edge-TTS Neural</span>
+              <span class="skill-tag">Barge-in Acústico</span>
+              <span class="skill-tag">Mute Guard Anti-eco</span>
+              <span class="skill-tag">Indexación Win32/UWP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         SECCIÓN 4: PROYECTOS DE INGENIERÍA (EL NÚCLEO DEL PORTAFOLIO)
+         ============================================================================== -->
+    <section id="proyectos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag font-mono">// Proyectos Reales & Hechos</span>
+          <h2 class="section-title">Sistemas Mecatrónicos & Software</h2>
+          <p class="section-description">
+            Soluciones completas construidas y probadas: hardware tangible, circuitos diseñados a medida, firmware optimizado y software multiplataforma.
+          </p>
+        </div>
+
+        <!-- Filtros por Categoría -->
+        <div class="projects-filter-bar">
+          <button type="button" class="filter-btn active" data-category="todos">Todos los Proyectos</button>
+          <button type="button" class="filter-btn" data-category="mecatronica">Mecatrónica & IoT</button>
+          <button type="button" class="filter-btn" data-category="software">Software & Apps</button>
+          <button type="button" class="filter-btn" data-category="ia">IA & Automatización</button>
+          <button type="button" class="filter-btn" data-category="sistemas">Sistemas & Bajo Nivel</button>
+        </div>
+
+        <!-- Cuadrícula Dinámica de Proyectos (Cargada desde data/projects.js) -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Renderizado automáticamente por app.js -->
+        </div>
+
+        <!-- Banner Interactivo: Preparado para recibir más proyectos -->
+        <div class="add-project-banner">
+          <h3>⚡ Arquitectura Preparada para Escalar</h3>
+          <p>
+            El portafolio cuenta con una base de datos desacoplada en <code>data/projects.js</code>. Puedes añadir nuevos proyectos instantáneamente copiando un bloque de código o usando el asistente interactivo.
+          </p>
+          <button type="button" class="btn-add-project" id="open-generator-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+            <span>➕ Añadir Nuevo Proyecto (Generador Interactivo)</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         SECCIÓN 5: FORMACIÓN & TRAYECTORIA
+         ============================================================================== -->
+    <section id="trayectoria">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag font-mono">// Trayectoria Profesional</span>
+          <h2 class="section-title">Formación Académica & Experiencia</h2>
+          <p class="section-description">
+            Educación universitaria formal y experiencia práctica orientada a la resolución de problemas técnicos bajo presión.
+          </p>
+        </div>
+
+        <div class="timeline-grid">
+          <!-- Columna Educación -->
+          <div class="timeline-column">
+            <h3 class="timeline-column-title">
+              <span>🎓</span> Formación Académica
+            </h3>
+            <div class="timeline-list">
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-card">
+                  <span class="timeline-date font-mono">2020 – 2026 | MONTERREY, N.L.</span>
+                  <h4 class="timeline-role">Ingeniería en Electrónica y Automatización</h4>
+                  <div class="timeline-institution">FIME – Universidad Autónoma de Nuevo León (UANL)</div>
+                  <p class="timeline-desc">
+                    Estudiante de último año con promedio destacado en materias de <strong>Control de Sistemas</strong>, <strong>Electrónica de Potencia</strong>, <strong>Microcontroladores</strong> e <strong>Instrumentación</strong>.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-card">
+                  <span class="timeline-date font-mono">CERTIFICACIONES TÉCNICAS</span>
+                  <h4 class="timeline-role">AutoCAD 2D / 3D & Sistemas de Control</h4>
+                  <div class="timeline-institution">Facultad de Ingeniería Mecánica y Eléctrica (FIME)</div>
+                  <p class="timeline-desc">
+                    Formación técnica acreditada en diseño asistido por computadora 2D/3D y metodologías avanzadas de electrónica de potencia y lazos de control industrial.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna Experiencia Laboral & Idiomas -->
+          <div class="timeline-column">
+            <h3 class="timeline-column-title">
+              <span>💼</span> Experiencia & Idiomas
+            </h3>
+            <div class="timeline-list">
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-card">
+                  <span class="timeline-date font-mono">2023 – PRESENTE</span>
+                  <h4 class="timeline-role">Operador Logístico y de Ruta</h4>
+                  <div class="timeline-institution">Plataformas Logísticas Independientes</div>
+                  <p class="timeline-desc">
+                    Optimización y ejecución de rutas bajo presión y tiempos estrictos. Mantenimiento preventivo electromecánico de vehículos y resolución ágil de contingencias operativas en campo.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-card">
+                  <span class="timeline-date font-mono">COMPETENCIA LINGÜÍSTICA</span>
+                  <h4 class="timeline-role">Inglés Técnico Profesional (Nivel B2)</h4>
+                  <div class="timeline-institution">Lectura y Redacción Técnica</div>
+                  <p class="timeline-desc">
+                    Lectura fluida y comprensión integral de documentación técnica internacional, hojas de datos (datasheets), manuales de fabricantes y normativas de ingeniería.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         SECCIÓN 6: CONTACTO & DESCARGA DIRECTA DE ARCHIVO (DIRECTRIZ NACIONAL)
+         ============================================================================== -->
+    <section id="contacto">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag font-mono">// Contacto Directo</span>
+          <h2 class="section-title">¿Listo para colaborar en tu próximo proyecto?</h2>
+          <p class="section-description">
+            Escríbeme o descárgate mi currículum en formato PDF para conocer más a fondo mi perfil y experiencia técnica.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Columna izquierda: Información de Contacto y Tarjeta CV -->
+          <div class="contact-info-cards">
+            <!-- Tarjeta Destacada de Descarga Directa del CV -->
+            <div class="cv-delivery-card">
+              <span class="cv-delivery-badge">Documento Oficial</span>
+              <h3 class="cv-delivery-title">Currículum Vitae (PDF)</h3>
+              <p class="cv-delivery-desc">
+                Descarga el documento completo con el historial académico, competencias técnicas, proyectos mecatrónicos y certificaciones.
+              </p>
+
+              <div class="cv-file-meta font-mono">
+                <span><strong>Archivo:</strong> Samuel_Tovar_Mujica_CV_Ingenieria_2026.pdf</span>
+                <span><strong>Ubicación:</strong> C:\Users\SAmue\Desktop\Portafolio_Samuel_Tovar\assets\docs\</span>
+                <span><strong>Formato:</strong> PDF Vectorial de Alta Definición</span>
+              </div>
+
+              <a href="assets/docs/Samuel_Tovar_Mujica_CV_Ingenieria_2026.pdf" download="Samuel_Tovar_Mujica_CV_2026.pdf" class="btn-download-hero-card" title="Descargar archivo CV PDF directamente">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                <span>Descargar CV Ahora (PDF)</span>
+              </a>
+            </div>
+
+            <!-- Canales Directos -->
+            <div class="contact-card">
+              <div class="contact-card-icon">✉️</div>
+              <div class="contact-card-info">
+                <h4>Correo Electrónico</h4>
+                <a href="mailto:mujica360@gmail.com">mujica360@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">📱</div>
+              <div class="contact-card-info">
+                <h4>Teléfono & WhatsApp</h4>
+                <a href="https://wa.me/527821302582" target="_blank" rel="noopener noreferrer">+52 (782) 130-2582</a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">📍</div>
+              <div class="contact-card-info">
+                <h4>Ubicación Física</h4>
+                <p>Monterrey, N.L., México</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna derecha: Formulario de Mensaje -->
+          <div class="contact-form-card">
+            <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 20px;">Envíame un Mensaje</h3>
+            
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Tu Nombre o Empresa</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="Ej. Ing. Roberto Mendoza / Tech Innovators" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Correo Electrónico</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="nombre@empresa.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Asunto o Tipo de Proyecto</label>
+                <input type="text" id="contact-subject" class="form-input" placeholder="Ej. Oportunidad laboral / Proyecto Gemelo Digital" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Mensaje Detallado</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Cuéntame sobre tu proyecto, requerimientos técnicos o propuesta..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                <span>Enviar Mensaje Directo</span>
+              </button>
+
+              <div id="contact-alert" style="display: none; margin-top: 14px; padding: 12px; background: rgba(16,185,129,0.15); border: 1px solid var(--emerald-accent); border-radius: var(--radius-sm); color: #34d399; font-size: 0.88rem; text-align: center;"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==============================================================================
+       MODAL: DETALLES DE PROYECTO
+       ============================================================================== -->
+  <div class="modal-backdrop" id="project-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="font-mono" style="font-size: 0.85rem; color: var(--cyan-accent);">// FICHA TÉCNICA DE INGENIERÍA</span>
+        <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Cerrar ventana modal">✕</button>
+      </div>
+      <div class="modal-body" id="modal-project-body">
+        <!-- Rellenado dinámicamente al hacer clic en un proyecto -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==============================================================================
+       MODAL: GENERADOR DE NUEVOS PROYECTOS (PREPARADO PARA RECIBIR MÁS PROYECTOS)
+       ============================================================================== -->
+  <div class="modal-backdrop" id="generator-modal">
+    <div class="modal-content" style="max-width: 900px;">
+      <div class="modal-header">
+        <div>
+          <h3 style="font-size: 1.25rem; font-weight: 700;">➕ Asistente para Añadir Nuevos Proyectos</h3>
+          <span style="font-size: 0.82rem; color: var(--text-dim);">Genera el código listo para data/projects.js y pruébalo en vivo</span>
+        </div>
+        <button type="button" class="modal-close-btn" id="generator-close-btn" aria-label="Cerrar modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <form id="new-project-form" style="display: grid; grid-template-columns: 1fr; gap: 16px;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
+            <div class="form-group" style="margin-bottom: 0;">
+              <label class="form-label">Título del Proyecto</label>
+              <input type="text" id="np-title" class="form-input" placeholder="Ej. Brazo Robótico 6-DOF con Control Cinemático Inverso" required>
+            </div>
+            <div class="form-group" style="margin-bottom: 0;">
+              <label class="form-label">Categoría</label>
+              <select id="np-category" class="form-input" style="background: #0d121d;">
+                <option value="mecatronica">Mecatrónica & IoT</option>
+                <option value="software">Software & Apps</option>
+                <option value="ia">IA & Automatización</option>
+                <option value="sistemas">Sistemas & Bajo Nivel</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
+            <div class="form-group" style="margin-bottom: 0;">
+              <label class="form-label">Año / Período</label>
+              <input type="text" id="np-year" class="form-input" value="2026">
+            </div>
+            <div class="form-group" style="margin-bottom: 0;">
+              <label class="form-label">Institución o Entorno</label>
+              <input type="text" id="np-institution" class="form-input" value="FIME - UANL">
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 0;">
+            <label class="form-label">Resumen Técnico (Summary)</label>
+            <textarea id="np-summary" class="form-textarea" style="min-height: 80px;" placeholder="Describe en 2 o 3 líneas el reto técnico resuelto y las herramientas utilizadas..."></textarea>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 0;">
+            <label class="form-label">Tecnologías y Tags (separados por coma)</label>
+            <input type="text" id="np-tags" class="form-input" value="ESP32, C++, ROS2, EasyEDA, Cinemática Inversa, Python">
+          </div>
+
+          <!-- Código generado en tiempo real -->
+          <div style="margin-top: 10px;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+              <span class="form-label" style="margin-bottom: 0;">Código para <code>data/projects.js</code>:</span>
+              <button type="button" id="copy-code-btn" class="font-mono" style="font-size: 0.8rem; color: var(--cyan-accent); background: rgba(0,242,254,0.1); padding: 4px 10px; border-radius: 4px;">📋 Copiar Código</button>
+            </div>
+            <pre id="generated-code-output" class="font-mono" style="background: #04060a; padding: 14px; border-radius: 8px; border: 1px solid var(--border-color); font-size: 0.8rem; color: #a5f3fc; max-height: 180px; overflow-y: auto; white-space: pre-wrap;"></pre>
+          </div>
+
+          <div style="display: flex; gap: 12px; margin-top: 10px;">
+            <button type="button" id="test-add-live-btn" class="btn-primary" style="flex: 1; justify-content: center;">
+              🚀 Añadir y Probar en la Vista Actual
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==============================================================================
+       FOOTER
+       ============================================================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand font-mono">
+        <span style="color: var(--cyan-accent);">&lt;ST /&gt;</span> Samuel Tovar Mujica
+      </div>
+      <p class="footer-quote">
+        "Diseñado con base en las directrices de portafolio de MoureDev y el estilo responsivo de ingeniería de MZCode01."
+      </p>
+      <div class="footer-copy font-mono">
+        © 2026 Samuel Tovar Mujica • FIME UANL • Monterrey, Nuevo León, México
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Volver Arriba -->
+  <button type="button" class="btn-back-to-top" id="back-to-top" aria-label="Volver arriba">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Scripts: Primero la base de datos de proyectos, luego la lógica -->
+  <script src="data/projects.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

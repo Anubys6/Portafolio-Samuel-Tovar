@@ -1,0 +1,331 @@
+/**
+ * ==============================================================================
+ * PORTAFOLIO DE INGENIERÍA - SAMUEL TOVAR MUJICA
+ * BASE DE DATOS MODULAR Y ESCALABLE DE PROYECTOS
+ * ==============================================================================
+ * 
+ * ¿CÓMO AÑADIR UN NUEVO PROYECTO?
+ * ------------------------------------------------------------------------------
+ * 1. Copia cualquiera de los objetos de la lista `PORTFOLIO_PROJECTS`.
+ * 2. Pégalo al inicio de la lista con un nuevo `id` único.
+ * 3. Completa los campos: title, category, year, summary, highlights, tags, links.
+ * 4. Guarda este archivo y recarga la página. ¡Aparecerá automáticamente en el portafolio!
+ * 
+ * Categorías disponibles para filtros:
+ * - 'todos' (Muestra todo)
+ * - 'mecatronica' (Mecatrónica, IoT, Hardware, Robótica)
+ * - 'software' (Desarrollo Web, Desktop, Móvil, Multiplataforma)
+ * - 'ia' (Inteligencia Artificial, Automatización, Asistentes de Voz)
+ * - 'sistemas' (Sistemas Embebidos, Arquitectura de Bajo Nivel, Rendimiento)
+ * ==============================================================================
+ */
+
+const PORTFOLIO_PROJECTS = [
+  {
+    id: "expendex",
+    title: "ExpendeX — Máquina Expendedora Inteligente & Gemelo Digital IoT",
+    category: "mecatronica",
+    categoryLabel: "Mecatrónica & Gemelo Digital IoT",
+    year: "2024 – 2026",
+    institution: "FIME - UANL",
+    status: "Operativo & Validado",
+    featured: true,
+    badge: "PROYECTO INSIGNIA MECATRÓNICO",
+    summary: "Ciclo completo de producto de una expendedora industrial conectada: CAD paramétrico en Fusion 360, PCB con matriz MOSFET 6x6, firmware ESP32 en C++, gemelo digital sincronizado y checkout con Google Pay API.",
+    description: "Desarrollo mecatrónico integral de ingeniería abarcando el ciclo de vida completo de producto. Incorpora modelado mecánico y cinemática en Autodesk Fusion 360 con impresión 3D a escala, diseño de PCB de potencia en EasyEDA con matriz de conmutación MOSFET 6x6 para accionar hasta 36 motores de dispensación con supresión de contracorrientes inductivas, firmware embebido de alto rendimiento en C++ (ESP32 / PlatformIO), co-simulación Wokwi sincronizada en tiempo real mediante API con el modelo 3D de Fusion 360 para crear un gemelo digital funcional, y ecosistema web responsivo con pasarela de pago real Google Pay API.",
+    highlights: [
+      "Modelado mecánico paramétrico completo en Fusion 360 y AutoCAD (chasis estructural, bandejas, canaletas y espirales helicoidales) con validación mediante impresión 3D aditiva (Bambu Lab / MakerWorld).",
+      "Diseño y ruteo de PCB de potencia en EasyEDA: matriz MOSFET 6x6 multiplexada para 36 motores, diodos flyback para cargas inductivas y control del compresor de refrigeración. Lista BOM industrial para JLCPCB.",
+      "Gemelo Digital IoT: Scripts en Python conectan la simulación de firmware en Wokwi con la API de Autodesk Fusion 360, rotando las espirales 3D en el viewport exactamente cuando el firmware emite el pulso de motor.",
+      "Kiosk Web responsivo (HTML5/CSS3/JS) con backend en Node.js para control de stock en tiempo real y flujo transaccional con Google Pay API (pre-compra, selector bancario y token de confirmación)."
+    ],
+    tags: [
+      "Autodesk Fusion 360",
+      "EasyEDA PCB",
+      "Matriz MOSFET 6x6",
+      "ESP32 / C++",
+      "PlatformIO",
+      "Co-simulación Wokwi",
+      "Python Fusion API",
+      "Node.js",
+      "Google Pay API",
+      "Impresión 3D Bambu Lab"
+    ],
+    metrics: [
+      { label: "Motores Accionados", value: "36" },
+      { label: "Arquitectura PCB", value: "MOSFET 6x6" },
+      { label: "Gemelo Digital", value: "Sincronizado" },
+      { label: "Checkout", value: "Google Pay API" }
+    ],
+    image: "assets/images/expendex_banner.png",
+    links: [
+      {
+        label: "Ver Kiosk Web",
+        icon: "globe",
+        url: "../user interface/index.html",
+        isInternal: true
+      },
+      {
+        label: "Script Fusion 360",
+        icon: "code",
+        url: "../Proyecto_Expandex_5_Fusion360.py",
+        isInternal: true
+      },
+      {
+        label: "Documentación FIME",
+        icon: "file-text",
+        url: "../AF4_Presentacion_Inicial_Paper_Vending_FIME_v3.docx",
+        isInternal: true
+      }
+    ]
+  },
+  {
+    id: "cfe-calculator",
+    title: "Calculadora de Consumo Eléctrico CFE & AI Medidor Pro",
+    category: "software",
+    categoryLabel: "Software & Auditoría Energética",
+    year: "2025 – 2026",
+    institution: "Proyecto Multiplataforma",
+    status: "Desplegado & Funcional",
+    featured: true,
+    badge: "APLICACIÓN MULTIPLATAFORMA",
+    summary: "Suite de auditoría energética y cálculo analítico de recibos CFE con motor de tarifas escalonadas (Básico, Intermedio, Excedente y DAC), empaquetada como Web App, Android (.apk) y Windows Launcher (.exe).",
+    description: "Herramienta analítica de ingeniería eléctrica orientada a la auditoría, proyección y optimización del gasto energético doméstico, comercial e industrial bajo el marco regulatorio y tarifario de la CFE en México. Desarrollada con un frontend de alta velocidad en Vite y TailwindCSS, cuenta con un dial interactivo de consumo en kWh, desglose matemático en tiempo real con IVA y subsidio gubernamental, modo oscuro/claro de alto contraste y empaquetado multiplataforma nativo.",
+    highlights: [
+      "Motor matemático de tarifas CFE que segmenta automáticamente los bloques de consumo mensual y bimestral (Básico, Intermedio, Excedente y DAC) calculando con precisión de centavos.",
+      "Interfaz reactiva ultrarrápida con dial de medición circular tipo velocímetro eléctrico (SVG dinámico y CSS animado).",
+      "Distribución multiplataforma: Web App accesible en cualquier navegador, aplicación móvil compilada para Android (.apk) y ejecutable de escritorio para Windows con launcher C# (.exe).",
+      "Simulación de escenarios de ahorro energético, detección de riesgo por entrada a tarifa DAC de alto consumo y recomendaciones automatizadas."
+    ],
+    tags: [
+      "Vite",
+      "TailwindCSS",
+      "JavaScript ES6+",
+      "Android APK",
+      "C# Launcher (.exe)",
+      "Ingeniería Eléctrica",
+      "Tarifas CFE",
+      "Arquitectura Multiplataforma"
+    ],
+    metrics: [
+      { label: "Tarifas Soportadas", value: "1, 1A-1F, DAC" },
+      { label: "Precisión Cálculo", value: "100%" },
+      { label: "Plataformas", value: "Web, APK, EXE" },
+      { label: "Tiempo de Respuesta", value: "<10 ms" }
+    ],
+    image: "assets/images/cfe_banner.png",
+    links: [
+      {
+        label: "Abrir Web App",
+        icon: "globe",
+        url: "../AI Medidor Pro.html",
+        isInternal: true
+      },
+      {
+        label: "Descargar .APK Android",
+        icon: "download",
+        url: "../Calculadora CFE.apk",
+        isInternal: true
+      },
+      {
+        label: "Descargar .EXE Windows",
+        icon: "windows",
+        url: "../Calculadora CFE.exe",
+        isInternal: true
+      }
+    ]
+  },
+  {
+    id: "jarvis-assistant",
+    title: "J.A.R.V.I.S. — Asistente de Escritorio Autónomo para Windows & HUD Táctico",
+    category: "ia",
+    categoryLabel: "Inteligencia Artificial & Automatización OS",
+    year: "2026",
+    institution: "Proyecto Autónomo de Automatización",
+    status: "Operativo en Producción Local",
+    featured: true,
+    badge: "AUTOMATIZACIÓN OS & IA GENERATIVA",
+    summary: "Asistente virtual de escritorio autónomo para Windows con interfaz táctica HUD (Reactor Arc), interacción continua por voz, filtrado pasa-banda humano, despacho Win32 <15ms e integración con Gemini AI.",
+    description: "Sistema operativo de automatización y asistencia ejecutiva para Windows 11 desarrollado en Python 3.11 con arquitectura de microservicios asíncronos (aiohttp + WebSockets). Incorpora una interfaz de usuario inspirada en el Reactor Arc de Iron Man con renderizado de scanlines y telemetría en tiempo real, pipeline de audio con filtrado pasa-banda humano (85 Hz - 3400 Hz), detección de actividad vocal (VAD), Mute Guard acústico anti-eco y corte instantáneo de audio por interrupción (*barge-in*). Despacha comandos de sistema en menos de 15 ms mediante la Win32 Shell API y cuenta con un indexador en segundo plano capaz de controlar más de 450 aplicaciones locales.",
+    highlights: [
+      "Despacho directo de aplicaciones y control de procesos en menos de 15 ms mediante la Win32 Shell API y gestión de señales de sistema.",
+      "Pipeline de voz con cancelación acústica: Web Speech API, filtro pasa-banda (85-3400 Hz), corte por interrupción (*barge-in*) y síntesis neural con Edge-TTS.",
+      "Cerebro cognitivo híbrido: Evaluación de intenciones locales con expresiones regulares optimizadas y delegación contextual con Gemini AI para tareas complejas.",
+      "Indexador dinámico en segundo plano que escanea y normaliza ejecutables Win32, accesos directos y paquetes UWP de Windows en una base de datos local ultrarrápida."
+    ],
+    tags: [
+      "Python 3.11",
+      "Win32 Shell API",
+      "WebSockets / aiohttp",
+      "Web Audio API (VAD)",
+      "Gemini AI",
+      "Edge-TTS",
+      "HUD Reactor Arc",
+      "Automatización Windows"
+    ],
+    metrics: [
+      { label: "Latencia de Despacho", value: "<15 ms" },
+      { label: "Apps Indexadas", value: "+450 apps" },
+      { label: "Filtro Acústico", value: "85 - 3400 Hz" },
+      { label: "Protocolo", value: "Barge-in Activo" }
+    ],
+    image: "assets/images/jarvis_banner.png",
+    links: [
+      {
+        label: "Iniciar JARVIS",
+        icon: "terminal",
+        url: "../Iniciar_JARVIS.bat",
+        isInternal: true
+      },
+      {
+        label: "Ver HUD Táctico",
+        icon: "cpu",
+        url: "../../.gemini/antigravity/scratch/jarvis/hud/index.html",
+        isInternal: true
+      },
+      {
+        label: "Ficha en Mente Colmena",
+        icon: "book",
+        url: "../../../dev/mente-colmena/10-proyectos/jarvis.md",
+        isInternal: true
+      }
+    ]
+  },
+  {
+    id: "clinica-coba",
+    title: "Clínica Dental Cobá MTY — Plataforma Médica & Odontograma 3D",
+    category: "software",
+    categoryLabel: "Desarrollo Web & Gráficos 3D",
+    year: "2026",
+    institution: "Desarrollo Web Comercial",
+    status: "Completado & Validado",
+    featured: false,
+    badge: "WEB & GRÁFICOS 3D WEBGL",
+    summary: "Plataforma integral de gestión clínica con odontograma tridimensional interactivo para diagnóstico dental, portal para especialistas médicos, automatización de citas vía WhatsApp y facturación en PDF.",
+    description: "Solución web integral para centros de salud odontológica en Monterrey, orientada a digitalizar el historial médico y agilizar la atención al paciente. Incluye un módulo tridimensional interactivo (Three.js / WebGL) que permite rotar e inspeccionar cada pieza dental, registrar tratamientos por diente (endodoncias, coronas, restauraciones), sistema de citas con recordatorios automáticos por WhatsApp y motor de emisión instantánea de presupuestos y recibos clínicos en PDF.",
+    highlights: [
+      "Odontograma interactivo tridimensional con selección de dientes, visualización de caras oclusales y trazado de intervenciones.",
+      "Integración de automatización de mensajería para confirmación de turnos y seguimiento post-operatorio de pacientes.",
+      "Módulo de finanzas clínicas con generación automatizada de comprobantes de pago y recetas en PDF.",
+      "Diseño responsivo optimizado para tabletas de consultorio y dispositivos móviles de los doctores."
+    ],
+    tags: [
+      "JavaScript ES6+",
+      "Three.js / WebGL",
+      "Python Backend",
+      "Generación PDF",
+      "WhatsApp Bot",
+      "HTML5 / CSS3",
+      "Diseño UI/UX Médico"
+    ],
+    metrics: [
+      { label: "Odontograma", value: "3D Interactivo" },
+      { label: "Generación Recibos", value: "PDF Automatizado" },
+      { label: "Notificaciones", value: "WhatsApp Bot" }
+    ],
+    image: "assets/images/clinica_coba_banner.png",
+    links: [
+      {
+        label: "Ver Plataforma Clínica",
+        icon: "globe",
+        url: "../../.gemini/antigravity/scratch/clinica-dental-coba-mty/index.html",
+        isInternal: true
+      },
+      {
+        label: "Portal Doctor",
+        icon: "user-check",
+        url: "../../.gemini/antigravity/scratch/clinica-dental-coba-mty/portal_doctor.html",
+        isInternal: true
+      }
+    ]
+  },
+  {
+    id: "aura-controller",
+    title: "Aura PC Controller — Telemetría en Tiempo Real y Control Remoto",
+    category: "sistemas",
+    categoryLabel: "Telemetría & Sistemas Embebidos",
+    year: "2026",
+    institution: "Proyecto de Monitoreo de Hardware",
+    status: "Funcional",
+    featured: false,
+    badge: "TELEMETRÍA & HARDWARE",
+    summary: "Sistema de supervisión y control remoto para estaciones de trabajo: lectura de sensores de hardware (CPU, GPU, RAM, ventiladores) y transmisión de baja latencia mediante WebSockets.",
+    description: "Herramienta de telemetría de ingeniería diseñada para el monitoreo en vivo de computadoras de alto rendimiento dedicadas a renderizado 3D y simulaciones de circuitos. Extrae lecturas de sensores de temperatura, carga computacional, frecuencias y voltajes a través de llamadas de bajo nivel en Windows, transmitiéndolas por un canal bidireccional WebSockets hacia un dashboard web con medidores analógicos y gráficos de tendencia.",
+    highlights: [
+      "Supervisión continua de métricas críticas de hardware con latencia de muestreo inferior a 100 ms.",
+      "Dashboard táctico con indicadores circulares, alertas de temperatura y estado térmico del procesador.",
+      "Control remoto de perfiles de energía, suspensión y apagado seguro de la estación de trabajo.",
+      "Arquitectura desacoplada en Python con servidor ligero y cliente web compatible con móviles."
+    ],
+    tags: [
+      "Python",
+      "WebSockets",
+      "Win32 API",
+      "Telemetría de Hardware",
+      "Dashboard Web",
+      "CSS3 Animations"
+    ],
+    metrics: [
+      { label: "Muestreo", value: "<100 ms" },
+      { label: "Monitoreo", value: "CPU / GPU / RAM" },
+      { label: "Canal", value: "WebSockets" }
+    ],
+    image: "assets/images/aura_banner.png",
+    links: [
+      {
+        label: "Ver Servidor",
+        icon: "server",
+        url: "../../.gemini/antigravity/scratch/aura-pc-controller/server.py",
+        isInternal: true
+      }
+    ]
+  },
+  {
+    id: "switch-lowlevel-recomp",
+    title: "Investigación & Optimización de Sistemas de Bajo Nivel (Mente Colmena)",
+    category: "sistemas",
+    categoryLabel: "Sistemas Operativos & Rendimiento de Bajo Nivel",
+    year: "2026",
+    institution: "Mente Colmena de Investigación",
+    status: "En Investigación & Desarrollo",
+    featured: false,
+    badge: "ARQUITECTURA DE SISTEMAS & RENDIMIENTO",
+    summary: "Colaboración en técnicas avanzadas de optimización de sistemas: compilación estática, wrappers para Newlib devkitARM r66, pipelines de renderizado Vulkan 1.4 y gestión de concurrencia.",
+    description: "Investigación aplicada y documentación técnica en la Mente Colmena sobre arquitecturas de ejecución de bajo nivel para plataformas restringidas por recursos. Participación en el análisis de recompilación de código de Xbox 360 con Mesa NVK Vulkan 1.4, gestión de descriptores de heap dinámicos, depuración de fallos de memoria 2168-0002 en Newlib devkitARM r66 y estrategias de threading masivo.",
+    highlights: [
+      "Documentación y síntesis de patrones de resolución para excepciones de desbordamiento de memoria y direccionamiento de 32 bits.",
+      "Estudio de balanceo de carga en pipelines gráficos Vulkan 1.4 y mitigación de cuellos de botella en shaders.",
+      "Adhesión rigurosa al marco de validación con evidencia reproducible y control de versiones en Git."
+    ],
+    tags: [
+      "C/C++",
+      "Vulkan 1.4",
+      "Newlib devkitARM",
+      "Mesa NVK",
+      "Sistemas Embebidos",
+      "Optimización de Rendimiento"
+    ],
+    metrics: [
+      { label: "Pipeline Gráfico", value: "Vulkan 1.4" },
+      { label: "Fichas de Evidencia", value: "9 Fichas Aprobadas" },
+      { label: "Marco", value: "Mente Colmena" }
+    ],
+    image: "assets/images/switch_banner.png",
+    links: [
+      {
+        label: "Ver Fichas Mente Colmena",
+        icon: "git-pull-request",
+        url: "../../../dev/mente-colmena/AGENTS.md",
+        isInternal: true
+      }
+    ]
+  }
+];
+
+// Exportación compatible tanto con entorno navegador (window) como módulos (Node/ESM)
+if (typeof window !== "undefined") {
+  window.PORTFOLIO_PROJECTS = PORTFOLIO_PROJECTS;
+}
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = { PORTFOLIO_PROJECTS };
+}
